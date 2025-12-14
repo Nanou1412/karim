@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --page-bg: #fbfbfc;
+  --muted: #6b7280;
+  --primary: #0ea5a4;
+  --accent: #b48ead;
+  --gold: #D4AF37;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, rgba(243,244,246,1) 0%, rgba(250,250,251,1) 100%);
+  color: #0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container-max { max-width: 1200px; margin-left:auto; margin-right:auto; padding-left:1rem; padding-right:1rem }
+
+/* Premium buttons */
+.btn-primary{ @apply bg-gradient-to-r from-primary-500 to-accent text-white font-semibold px-4 py-2 rounded-lg shadow-md }
+.btn-ghost{ @apply border border-gray-200 px-3 py-2 rounded-md }
+
